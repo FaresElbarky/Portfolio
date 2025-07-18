@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fares Elbarky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="Hero">
+        <div class="container">
+            <h1>I am <span>Fares Elbarky</span></h1>
+            <p>I am a Web Developer</p>
+        </div>
+    </section>
+    <section class="Resume">
+        <div class="Resume-content">
+            <img src="https://scontent.fcai19-9.fna.fbcdn.net/v/t39.30808-6/492001572_2111546292591953_229850967575735041_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=J_RaaZXzl70Q7kNvwGmLHTB&_nc_oc=AdkSDlPUFAiv0H-5N-FQDJiP6MgeS0h1qytz9Ua5bGk9K3xhvGomCgrE_iPVs-eKsjA&_nc_zt=23&_nc_ht=scontent.fcai19-9.fna&_nc_gid=mD_Gr3EJElQueg8grbyi7w&oh=00_AfT4LkRdBU_AfL7APCN10fXcJHzbrfKYKH2KK8YL54VPFQ&oe=68807773" alt="FaresElbarky">
+            <h2>Hello</h2>
+            <p>My name is Fares Elbarky, I am a web developer with a passion for creating dynamic and responsive websites. I specialize in front-end development, using HTML, CSS, and JavaScript to build user-friendly interfaces.</p>
+        </div>
+    </section>
+    <section class="Skills">
+        <div class="Skills-content">
+         <h2>Skills</h2>
+         <div class="Container">
+            <div class="skill1">
+                <h3>HTML</h3>
+                <p>Proficient in creating structured and semantic web pages using HTML5.</p>
+                <img src="https://th.bing.com/th/id/R.11f2af801622280f72b19dbba3a8ef4c?rik=22ZFz9UluwgO%2fA&riu=http%3a%2f%2fwww.html5.com%2fimages%2fHTML5_logo.png&ehk=6gA4eC%2bphRhrfKDRcoCc3Vp5djSZKbnMdy2kmihltEo%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </div>
+            <div class="skill2">
+                <h3>CSS</h3>
+                <p>Experienced in styling web pages with CSS3, including Flexbox and Grid layouts.</p>
+                <img src="https://th.bing.com/th/id/R.8e2b977d07d2763ac8a15ffa610e0b37?rik=0M%2fdhaLQ0xDvfA&pid=ImgRaw&r=0" alt="">
+            </div>
+            <div class="skill3">
+                <h3>JavaScript</h3>
+                <p>Skilled in creating interactive web applications using JavaScript</p>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.YPYdVAg5ieRspLI6HIpmDQHaIB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            </div>
+            <div class="skill4">
+                <h3>React.Js</h3>
+                <p>Proficient in building user interfaces with React.js, utilizing component-based architecture.
+                </p>
+                <img src="https://www.liblogo.com/img-logo/re269re79-react-logo-react-logo-.png" alt="">
+            </div>
+            <div class="skill5">
+                <h3>C#</h3>
+                <p>Experienced in developing applications using C#, focusing on Database systems.</p>
+                <img src="https://th.bing.com/th/id/OIP.FcR9GtzJQCnwVx5-k7_H-QHaHa?w=176&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="">
+            </div>
+            <div class="skill6">
+                <h3>.Net Core</h3>
+                <p>Skilled in building robust web applications using .NET Core framework.</p>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.bTwW6KDM76ytfXnqYVDi6wHaEH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            </div>
+            <div class="skill7">
+                <h3>Api</h3>
+                <p>Experienced in developing RESTful APIs for seamless data exchange </p>
+                <img src="https://static.vecteezy.com/system/resources/previews/021/826/844/original/api-icon-in-flat-style-software-integration-illustration-on-isolated-background-algorithm-programming-sign-business-concept-vector.jpg" alt="">
+            </div>
+         </div>   
+        </div>
+    </section>
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        <div class="info">
+            <div class="info-icons">
+                <a href="mailto:fareselbarky199@gmail.com" class="fa fa-envelope">
+
+                </a>
+                <a href="https://www.linkedin.com/in/fares-elbarky-2131bb354/" class="fa fa-linkedin"></a>
+                <a href="https://www.facebook.com/Rumbo199" class="fa fa-facebook"></a>
+            </div>
+            <div class="contactme">
+                <button class="btn">Call me</button>
+            </div>
+        </div>
+    </section>
+  <script>
+// filepath: (add to your HTML file before </body>)
+document.addEventListener("DOMContentLoaded", function() {
+    // Fade in Hero text on load
+    const heroText = document.querySelector('.container');
+    if (heroText) {
+        heroText.style.opacity = 0;
+        heroText.style.transition = "opacity 1.5s";
+        setTimeout(() => {
+            heroText.style.opacity = 1;
+        }, 300);
+    }
+
+    // Fade in sections on scroll
+    const fadeSections = document.querySelectorAll(
+        '.Resume, .Resume-content, .Skills, .skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill7, .contact'
+    );
+    fadeSections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transition = "opacity 1.2s";
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    fadeSections.forEach(section => {
+        observer.observe(section);
+    });
+});
+</script>
+</body>
+</html>
